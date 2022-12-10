@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start-->
+    <header>
+        <div class="container">
+            <h1>Mehnat, mehnat va yana mehnat..✊</h1>
+            <hr>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+      {% block content %}
+      <section class="sidebar">
+        <ul>
+          {% for dars in darslar %}
+          <li><a>{{ dars.nechanchi_dars }}</a> 
+            <input type="text" id="kalit-nav1" placeholder="kalit">
+            <button onclick="foo1()">Tekshirish</button>            
+            <button disabled id="next-nav-btn1"><a id="next-nav-a1" >Kirish</a></button>
+          </li>
+          {% endfor %}
+          <li><a>2-dars | HTML</a> 
+            <input type="text" id="kalit-nav2" placeholder="kalit">
+            <button onclick="foo2()">Tekshirish</button>            
+            <button disabled id="next-nav-btn2"><a id="next-nav-a2" >Kirish</a></button>
+          </li>
+          
+          <li><a>3-dars | HTML</a> 
+            <input type="text" id="kalit-nav3" placeholder="kalit">
+            <button onclick="foo3()">Tekshirish</button>            
+            <button disabled id="next-nav-btn3"><a id="next-nav-a3" >Kirish</a></button>
+          </li>
+          <li><a>4-dars | HTML</a> 
+            <input type="text" id="kalit-nav4" placeholder="kalit">
+            <button onclick="foo4()">Tekshirish</button>            
+            <button disabled id="next-nav-btn4"><a id="next-nav-a4" >Kirish</a></button>
+          </li>
+          <li><a>5-dars | HTML</a> 
+            <input type="text" id="kalit-nav5" placeholder="kalit">
+            <button onclick="foo5()">Tekshirish</button>            
+            <button disabled id="next-nav-btn5"><a id="next-nav-a5" >Kirish</a></button>
+          </li>
+          
+        </ul>
+      </section>
+      {% endblock content %}
+      <!--  -->
+      <div class="main-content">
+        <div class="video">
+          <div>
+            <video controls="" controlslist="nodownload" oncontextmenu="event.preventDefault()" src="{% static '/videos/css 1-dars.mp4' %}" poster="./images/css 1-dars.jpg"></video>
+          </div>
+          <div>
+            <video controls="" controlslist="nodownload" oncontextmenu="event.preventDefault()" src="{% static '/videos/css 1-dars.mp4' %}" poster="./images/css 1-dars.jpg"></video>
+          </div>
+          <div>
+            <video controls="" controlslist="nodownload" oncontextmenu="event.preventDefault()" src="{% static '/videos/css 1-dars.mp4' %}" poster="./images/css 1-dars.jpg"></video>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="tasks">
+            <div>
+              <button class="task-btn"><a href="./images/css 1-dars.jpg" download="task-1">Vazifalar</a></button>
+            </div>
+            <div>
+              <button class="code-btn"><a href="./images/css 1-dars.jpg" download="code">Qo'llanma</a></button>
+            </div>
+          </div>
+
+          <div class="next">
+            <h2>❗Vazifalarni bajarib bo'lib bizga yuboring va tekshirib sizga keyingi darsga o'tish kalitini beramiz.</h2>
+            
+            <div>
+              <button class="submit-btn"><a href="http://t.me/musoyev_baxtiyor">Vazifani yuborish uchun bosing</a></button>
+            </div>
+          </div>
+
+          <div class="kalit">
+            <h2>Keyingi darsga o'tish uchun kalitni kiriting.</h2>
+            <form>
+              <div>
+                <input type="text" id="kalit" placeholder="kalit">
+              </div>
+  
+              <div>
+                <button class="tekshir-btn" id="tekshir2" type="button">Tekshirish</button>
+              </div>
+              <div>
+                <button class="next-btn" id="next-btn" disabled><a id="next-a">Keyingi darsga o'tish</a></button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+    </main>
+
+    <!-- js -->
+    <script src="./js/app.j"></script>
+</body>
+<script src="{% static '/js/main.js' %}"></script>
+</html>

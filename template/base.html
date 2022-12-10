@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/js/main.js' %}">
+    <title>Document</title>
+</head>
+<body>
+    <!-- start -->
+    <header>
+        <div class="container">
+            <h1>Salom do'stlar, bosinglar davay davay..✊</h1>
+            <hr>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <h2>Tezroq tanla va boshla!🚀🚀</h2>
+            <div class="wrapper">
+                <div class="card card-html">
+                    <h2>HTML</h2>
+                    <p>The language for building web pages</p>
+                    <div>
+                        <button><a href="{% url 'html' %}" >Learn HTML</a></button>
+                    </div>
+                </div>
+
+                <div class="card card-css">
+                    <h2>CSS</h2>
+                    <p>The language for building web pages</p>
+                    <div>
+                        <button>Learn CSS</button>
+                    </div>
+                </div>
+
+                <div class="card card-sass">
+                    <h2>SASS</h2>
+                    <p>The language for building web pages</p>
+                    <div>
+                        <button>Learn SASS</button>
+                    </div>
+                </div>
+
+                <div class="card card-bootstrap">
+                    <h2>BOOTSTRAP</h2>
+                    <p>The language for building web pages</p>
+                    <div>
+                        <button>Learn BOOTSTRAP</button>
+                    </div>
+                </div>
+
+                <div class="card card-javascript">
+                    <h2>JAVASCRIPT</h2>
+                    <p>The language for building web pages</p>
+                    <div>
+                        <button>Learn JAVASCRIPT</button>
+                    </div>
+                </div>
+
+                <div class="card card-react">
+                    <h2>React & Redux</h2>
+                    <p>The language for building web pages</p>
+                    <div>
+                        <button>Learn React</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

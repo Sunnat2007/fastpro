@@ -1,0 +1,212 @@
+/* agooon */
+
+/* default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.sidebar ul li:nth-child(1){
+    background-color: rgba(41, 41, 41, 0.7);
+}
+
+
+/* header */
+header {
+    width: 100%;
+    padding: 16px 0;
+    height: 10vh;
+    /* background-color: #0D1721; */
+    background-color: #121212;
+}
+
+header hr {
+    margin-top: 10px;
+}
+
+header .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+header .container h1 {
+    font-size: 28px;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    background-color: red;
+    display: flex;
+}
+main .sidebar {
+    width: 35%;
+    height: 90vh;
+    background-color: black;
+    overflow: auto;
+}
+main .sidebar ul {
+    padding: 30px;
+}
+main .sidebar ul li {
+    list-style: none;
+    padding: 20px 20px 10px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+main .sidebar ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+main .sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.225);
+}
+main .sidebar ul li input {
+    height: 28px;
+    max-width: 100px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+    outline: none;
+}
+main .sidebar ul li button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 10px;
+    height: 28px;
+    font-size: 14px;
+}
+main .sidebar ul li button:hover {
+    background-color:#121212;
+}
+main .sidebar ul li button:nth-child(4){
+    background-color: rgb(0, 177, 0);
+}
+main .sidebar ul li button:nth-child(4):disabled {
+    background-color: transparent;
+}
+
+main .sidebar ul li button a {
+    font-size: 14px;
+}
+/* -- */
+main .main-content {
+    background-color: rgb(197, 197, 231);
+    width: 65%;
+    height: 90vh;
+    /* --- */
+    overflow: auto;
+    background-color: #ffffff;
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+main .main-content .video {
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+main .main-content video {
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* tasks */
+main .main-content .block {
+    width: 48%;
+}
+main .main-content .block .tasks {
+    display: flex;
+}
+main .main-content .tasks button {
+    width: 100px;
+    border: 1px solid;
+    background-color: white;
+    margin-right: 10px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+main .main-content .tasks button:hover {
+    background-color: rgba(0, 0, 0, 0.282);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.423);
+}
+main .main-content .tasks button:active {
+    background-color: rgba(0, 0, 0, 0.279);
+}
+main .main-content .tasks button a {
+    color: black;
+}
+/* -- */
+main .main-content .block .next {
+    margin:30px 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 20px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+main .main-content .block .next button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    background-color: rgb(0, 177, 0);
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.708);
+}
+main .main-content .block .next button a {
+    color: #fff;
+}
+/* -- */
+main .main-content .kalit {
+    background-color: rgb(0, 177, 0);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+main .main-content .kalit form {
+    width: 80%;
+    margin: 0 auto;
+}
+main .main-content .kalit form input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+main .main-content .kalit form button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 255, 0.806);
+    border: 1px solid #fff;
+    color: #fff ;
+    cursor: pointer;
+}
+main .main-content .kalit form button:hover {
+    background-color: rgb(76, 76, 187);
+}
+main .main-content .kalit form button a {
+    color: #fff;
+}
+main .main-content .kalit form button.next-btn:disabled {
+    background-color: transparent;
+}
